@@ -1,0 +1,53 @@
+/* Partners section */
+#partners {
+    background-color: #f8f8f8; /* Adjust the color to match your design */
+    padding: 50px;
+    text-align: left;
+  }
+  
+  .partners-header h2 {
+    color: #2c3e50; /* Dark text color */
+    font-size: 2.5rem;
+    margin-bottom: 0.5em;
+  }
+  
+  .partners-header p {
+    color: #2c3e50; /* Dark text color */
+    font-size: 1.5rem;
+    margin-bottom: 2em;
+  }
+  
+  .partners-logos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  .logo img {
+    max-width: 100%; /* Scale images within their containers */
+    height: auto; /* Maintain aspect ratio */
+    padding: 10px; /* Optional: to prevent images from touching */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .logo:hover img {
+    transform: scale(1.1); /* Scales the image up to 110% on hover */
+  }
+  
+
+
+  @media (max-width: 768px) {
+    .partners-header h2 {
+        font-size: 2rem;
+      }
+      
+      .partners-header p {
+        font-size: 1rem;
+      }
+      
+      .logo {
+        padding: 5px; /* Smaller padding on smaller screens */
+      }
+  }

@@ -1,0 +1,65 @@
+/* projects section */
+
+#projects {
+    background-color: #fff; /* Assuming a white background */
+    color: #2c3e50; /* Dark text, pick color from the image */
+    padding: 50px;
+    text-align: left;
+  }
+  
+  .projects-header h2 {
+    color: #333333; /* Darker text for the heading */
+    margin-bottom: 20px;
+  }
+  
+  .projects-header p {
+    color: #666666; /* Lighter text for the paragraph */
+    margin-bottom: 40px;
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 20px; /* Space between items */
+  }
+  
+  .project-item {
+    position: relative; /* For text positioning */
+  }
+  
+  .project-item img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 8px;
+  }
+  
+  .project-item h3 {
+    position: absolute; /* Position the text over the image */
+    bottom: 10px; /* Position from the bottom of the image */
+    left: 10px; /* Position from the left of the image */
+    color: #ffffff; /* White text */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for text */
+    padding: 5px 10px; /* Padding around text */
+    border-radius: 5px; /* Rounded corners for the text background */
+    width: calc(100% - 20px); /* Full width minus padding */
+    box-sizing: border-box;
+  }
+  
+
+  @media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: 1fr; /* One column on small screens */
+      }
+    
+      .projects-header h2 {
+        font-size: 24px; /* Smaller font size for mobile screens */
+      }
+    
+      .projects-header p {
+        font-size: 14px; /* Smaller font size for mobile screens */
+      }
+    
+      .project-item h3 {
+        font-size: 16px; /* Smaller font size for mobile screens */
+      }
+  }

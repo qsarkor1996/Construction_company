@@ -1,0 +1,76 @@
+footer {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 20px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+  }
+  
+  .footer-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allows the items to wrap on smaller screens */
+  }
+  
+  .footer-section {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-icons a {
+    color: #ffffff;
+    margin: 0 10px;
+    font-size: 24px; /* Adjust size as necessary */
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #4da7de; /* Or any other hover color */
+  }
+  
+  .project-item img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Smooth transition for the transform */
+  }
+  
+  .project-item:hover img {
+    transform: scale(1.1); /* Scales the image up to 110% */
+  }
+  
+
+  @media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .footer-section {
+        align-items: center;
+        text-align: center;
+      }
+      
+      .social-icons a {
+        font-size: 20px; /* Smaller icons for small screens */
+      }
+      
+      .social-icons {
+        margin-top: 20px; /* Add some space above the social icons */
+      }
+  }

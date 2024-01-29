@@ -1,0 +1,129 @@
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+}
+
+/* Body and HTML stretch to full height of the viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Flex container for body to manage footer */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header placeholder simulates the space for the actual header */
+#header-placeholder {
+    height: 100px; /* Adjust to match the actual header height */
+    width: 100%;
+}
+
+/* Main content styling */
+main.container {
+    display: flex;
+    flex-grow: 1;
+    padding-top: 60px; /* Offset for the fixed header */
+    margin-bottom: 60px; /* Offset for the footer */
+    background-color: #ffffff; /* Change as needed */
+}
+
+/* Service content styling */
+.service-content {
+    flex: 1; /* Take up remaining space */
+    padding-right: 20px; /* Spacing between text and image */
+    max-width:auto;
+}
+
+/* Service Page Image */
+#service-image {
+    max-width: 50%; /* Adjust the width of the image */
+    height: auto; /* Keep aspect ratio */
+}
+
+/* Service Page Headings */
+h1 {
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: left; /* Center the heading */
+}
+
+/* Service Page Paragraph */
+main p {
+    color: #333;
+    margin-bottom: 1rem;
+    line-height: 1.6; /* Improve readability */
+}
+
+/* Footer placeholder for the sticky footer */
+#footer-placeholder {
+    height: 60px; /* Adjust to match the actual footer height */
+    width: 100%;
+}
+
+/* Ensure footer sticks to the bottom */
+footer {
+    margin-top: auto;
+    width: 100%;
+}
+
+/* Container holding the content */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff; /* Assuming a light theme for the service page */
+    color: #333; /* For text color */
+}
+
+
+/* Back to Projects Button */
+.back-to-projects {
+    margin-top: 2rem;
+    text-align: left; /* Center the back button */
+}
+
+.back-to-projects .button {
+    background-color: #ff5722; /* Orange background color */
+    color: #ffffff; /* White text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block; /* Needed to apply padding and margins */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none; /* Remove underline from link */
+}
+
+.back-to-projects .button:hover {
+    background-color: #e64a19; /* Darken the button on hover */
+    color: #ffffff; /* Keep text color white on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    main.container {
+        flex-direction: column; /* Stack elements vertically */
+        padding-top: 120px;
+    }
+    #service-image {
+        max-width: 100%; /* Full width on small screens */
+    }
+    
+    
+    .container {
+        padding: 1rem;
+    }
+
+    .back-to-projects .button {
+        padding: 8px 16px; /* Smaller padding on mobile */
+        font-size: 0.9rem; /* Smaller font size on mobile */
+    }
+}
+
+/* Import main CSS if global styles are needed */
+@import url('main.css');
